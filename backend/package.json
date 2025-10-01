@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "python server.py",
+    "build": "echo 'Nothing to build for Python backend'"
+  }
+}
+
+

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "buildCommand": "cd frontend && yarn install --frozen-lockfile && yarn build",
+  "outputDirectory": "frontend/build",
+  "framework": "create-react-app",
+  "installCommand": "cd frontend && yarn install --frozen-lockfile",
+  "devCommand": "cd frontend && yarn start",
+  "env": {
+    "REACT_APP_API_URL": "https://your-backend.example.com"
+  }
+}
+
+

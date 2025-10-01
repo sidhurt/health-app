@@ -16,7 +16,7 @@ import { format } from 'date-fns';
 import { toast } from 'sonner';
 import './App.css';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_API_URL || process.env.NEXT_PUBLIC_API_URL || process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 // Mock user token for MVP (in production, use proper authentication)
