@@ -22,6 +22,9 @@ import uvicorn
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
+# Allow enabling Emergent features via environment variable:
+USE_EMERGENT = os.environ.get("USE_EMERGENT", "false").lower() in ("1", "true", "yes")
+
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
@@ -144,6 +147,9 @@ class StatusCheckCreate(BaseModel):
 # AI Service
 async def get_ai_insights(request: AIInsightRequest) -> Dict[str, Any]:
     """Generate AI-powered fitness insights using OpenAI"""
+    # Ensure Emergent AI is available and enabled
+    if not (USE_EMERGENT and EMERGENT_AVAILABLE):
+        raise HTTPException(status_code=503, detail="AI insights unavailable")
     try:
         # Initialize LLM Chat with emergent key
         chat = LlmChat(
