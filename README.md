@@ -16,10 +16,10 @@ FitTrack helps you take control of your fitness by tracking your **nutrition, ex
 ---
 
 ## 🚀 Tech Stack
-**Frontend:** React, Tailwind CSS, [Next.js/Vite if used]  
+**Frontend:** React, Tailwind CSS
 **Backend:** Node.js / Express (custom API layer)  
 **AI/ML:** Emergent Labs API for generating AI insights  
-**Database:** [Postgres / SQLite / In-memory] (fill in your actual choice)  
+**Database:** In-memory
 **Version Control:** Git + GitHub  
 
 ---
