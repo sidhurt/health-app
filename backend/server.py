@@ -11,7 +11,12 @@ from typing import List, Optional, Dict, Any
 import uuid
 from datetime import datetime, timezone
 import httpx
-from emergentintegrations.llm.chat import LlmChat, UserMessage
+# optional emergent integrations — gracefully degrade if unavailable
+try:
+    from emergentintegrations.llm.chat import LlmChat, UserMessage
+    EMERGENT_AVAILABLE = True
+except Exception:
+    EMERGENT_AVAILABLE = False
 import uvicorn
 
 ROOT_DIR = Path(__file__).parent
@@ -24,6 +29,11 @@ db = client[os.environ['DB_NAME']]
 
 # Create the main app without a prefix
 app = FastAPI(title="FitTrack - Fitness Journey Tracker", description="AI-powered fitness tracking app")
+
+# quick health check endpoint for deployments
+@app.get("/health", include_in_schema=False)
+async def health_check():
+    return {"ok": True, "service": "FitTrack Backend", "time": datetime.now(timezone.utc).isoformat()}
 
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
