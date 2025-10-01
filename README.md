@@ -3,7 +3,6 @@
 
 FitTrack helps you take control of your fitness by tracking your **nutrition, exercise, and goals** while providing **AI-powered insights** to optimize your health journey.
 
-![App Screenshot](docs/screenshot.png) <!-- replace with actual screenshot path -->
 
 ---
 
