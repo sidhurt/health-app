@@ -1,8 +1,9 @@
-# Here are your Instructions
 # FitTrack 🏋️‍♂️🥗🤖
 **Your AI-powered fitness journey tracker**
 
 FitTrack helps you take control of your fitness by tracking your **nutrition, exercise, and goals** while providing **AI-powered insights** to optimize your health journey.
+
+![App Screenshot](docs/screenshot.png) <!-- replace with actual screenshot path -->
 
 ---
 
@@ -16,50 +17,51 @@ FitTrack helps you take control of your fitness by tracking your **nutrition, ex
 ---
 
 ## 🚀 Tech Stack
-**Frontend:** React, Tailwind CSS
-**Backend:** Node.js / Express (custom API layer)  
-**AI/ML:** Emergent Labs API for generating AI insights  
-**Database:** In-memory
-**Version Control:** Git + GitHub  
+- **Frontend:** React, Tailwind CSS  
+- **Backend:** Node.js / Express (custom API layer)  
+- **AI/ML:** Emergent Labs API for generating AI insights  
+- **Database:** In-memory  
+- **Version Control:** Git + GitHub  
 
 ---
 
 ## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js >= 18.x
-- Yarn or npm
+- Node.js >= 18.x  
+- Yarn or npm  
 
 ### Installation
-Clone the repo:
+
+Clone the repo and move into it:
 ```bash
 git clone https://github.com/sidhurt/health-app.git
 cd health-app
 
-Install dependencies:
-
+```
+### Install dependencies:
 # frontend
+```bash
 cd frontend
 yarn install
-
+```
 # backend
+```
 cd ../backend
 yarn install
-
-
-Start the dev servers:
-
-# In frontend
+```
+### Start the dev servers:
+# frontend
+```
 yarn dev
-
-# In backend
+```
+# backend
+```
 yarn start
+```
+#Open http://localhost:3000 to view the app.
 
-
-Open http://localhost:3000
- to view the app.
-
-📂 Project Structure
+### 📂 Project Structure
 health-app/
 │
 ├── frontend/         # React-based UI
@@ -69,16 +71,7 @@ health-app/
 ├── README.md         # This file
 └── .gitignore
 
-🔮 AI Insights
-
-The AI Insights feature uses Emergent Labs AI APIs to generate personalized recommendations.
-Example prompts:
-
-"Give me a workout plan for strength training 5x/week"
-
-"Suggest a balanced 2000-calorie diet"
-
-🛠 Roadmap
+### 🛠 Roadmap
 
  Add user authentication (Firebase/Auth0)
 
@@ -88,7 +81,7 @@ Example prompts:
 
  Add progress charts & analytics
 
-🤝 Contributing
+### 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to open an issue or submit a PR.
