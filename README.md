@@ -39,22 +39,22 @@ cd health-app
 
 ```
 ### Install dependencies:
-# frontend
+### frontend
 ```bash
 cd frontend
 yarn install
 ```
-# backend
+### backend
 ```
 cd ../backend
 yarn install
 ```
 ### Start the dev servers:
-# frontend
+### frontend
 ```
 yarn dev
 ```
-# backend
+### backend
 ```
 yarn start
 ```
