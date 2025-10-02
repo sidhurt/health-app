@@ -62,13 +62,13 @@ yarn start
 
 ### 📂 Project Structure
 health-app/
-│
-├── frontend/         # React-based UI
-├── backend/          # API and business logic
-├── tests/            # Unit/integration tests
-├── .emergent/        # AI model configs (ignored in Git)
-├── README.md         # This file
+├── frontend/        # React-based UI
+├── backend/         # API and business logic
+├── tests/           # Unit/integration tests
+├── .emergent/       # AI model configs (ignored in Git)
+├── README.md        # This file
 └── .gitignore
+
 
 ### 🛠 Roadmap
 
